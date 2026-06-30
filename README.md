@@ -1,6 +1,6 @@
-# ☕ The CAFERT 🫘
+# ☕ The CAFERT 
 
-This is Project #1 of the SoftITo Backend Development program. It is a dynamic web application built for a cafe, featuring a public-facing landing page and a secure admin dashboard to easily manage menu items, featured dishes, and team members.
+This is Project #1 of the SoftITo Backend Development program. It is a dynamic web application built for a cafe, featuring a public-facing landing page and an admin dashboard to easily manage menu items, featured dishes, and team members.
 
 ## Tech Stack
 
