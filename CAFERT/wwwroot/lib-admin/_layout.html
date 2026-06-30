@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cafert Admin — Layout</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap + Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+:root{
+  /* Cafert-inspired palette */
+  --cream:        #fbf8f3;
+  --cream-2:      #f3ede2;
+  --coffee: #2d2218;   /* darkest — topbar/sidebar */
+  --coffee-2: #3d2f27;   /* slightly lighter — main bg accents */
+  --caramel: #d4a85a;   /* primary CTA tone */
+  --caramel-dk: #a8804a;
+  --olive:        #5d5a3a;   /* the cafert headline olive */
+  --sweet-red:    #c8553d;
+  --sweet-red-dk: #9b3a26;
+  --muted: #9e8d75;
+  --line:         rgba(212,168,90,.18);
+
+  --grad-add:    linear-gradient(135deg,#5b4636 0%,#3a2d22 60%,#2a1f17 100%);
+  --grad-edit:   linear-gradient(135deg,#d9b489 0%,#c8a37a 50%,#a8814f 100%);
+  --grad-delete: linear-gradient(135deg,#e07b62 0%,#c8553d 55%,#8a2f1d 100%);
+
+  --shadow-sm: 0 2px 6px rgba(58,45,34,.08);
+  --shadow-md: 0 10px 24px -10px rgba(58,45,34,.35);
+  --shadow-lg: 0 18px 40px -14px rgba(58,45,34,.45);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:'Jost',system-ui,sans-serif;
+  background:var(--cream);
+  color:#2b231b;
+  font-size:15px;
+}
+h1,h2,h3,.display-serif{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;
+  letter-spacing:.01em;
+  color:var(--olive);
+}
+
+/* ===== App shell ===== */
+.app{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-rows:64px 1fr 48px;
+  grid-template-areas:
+    "topbar topbar"
+    "sidebar main"
+    "sidebar footer";
+  min-height:100vh;
+  transition:grid-template-columns .25s ease;
+}
+.app.collapsed{grid-template-columns:72px 1fr}
+
+/* ===== Topbar ===== */
+.topbar{
+  grid-area:topbar;
+  background:linear-gradient(180deg,#352922 0%,#2d2218 100%);border-bottom:1px solid rgba(212,168,90,.22);
+  color:var(--cream);
+  display:flex;align-items:center;
+  padding:0 18px;
+  box-shadow:var(--shadow-md);
+  position:sticky;top:0;z-index:50;
+}
+.brand{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:260px;height:100%;
+  transition:width .25s ease;
+  border-right:1px solid var(--line);
+}
+.app.collapsed .brand{width:72px}
+.brand .bean-tile{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#3d2f27,#1f1610);border:1px solid rgba(212,168,90,.4);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 14px rgba(0,0,0,.35)}.brand .bean{font-size:1.35rem;line-height:1;filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))}
+.brand .brand-text{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;font-weight:600;font-size:1.35rem;
+  letter-spacing:.02em;
+;color:#efe2c9}
+.brand .brand-text b{font-style:normal;font-family:'Jost',sans-serif;font-weight:700;letter-spacing:.34em;text-transform:uppercase;font-size:.95rem;margin-left:4px;background:linear-gradient(135deg,#f6e3b8 0%,#d4a85a 60%,#a8804a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.app.collapsed .brand .brand-text{display:none}
+
+.topbar-toggle{
+  background:transparent;border:0;color:var(--cream);
+  width:42px;height:42px;border-radius:10px;
+  display:inline-flex;align-items:center;justify-content:center;
+  margin-left:14px;transition:all .2s;
+}
+.topbar-toggle:hover{background:rgba(255,255,255,.08);color:var(--caramel)}
+
+.topbar-actions{
+  margin-left:auto;display:flex;align-items:center;gap:10px;
+}
+.icon-btn{
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(255,255,255,.04);color:var(--cream);
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:all .2s; text-decoration:none;
+}
+.icon-btn:hover{background:var(--caramel);color:var(--coffee);transform:translateY(-1px)}
+.dropdown-menu{
+  border:0;box-shadow:var(--shadow-lg);border-radius:12px;padding:6px;
+}
+.dropdown-item{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 12px;border-radius:8px;font-weight:500;
+}
+.dropdown-item:hover{background:var(--cream-2);color:var(--coffee)}
+
+/* ===== Sidebar ===== */
+.sidebar{
+  grid-area:sidebar;
+  background:linear-gradient(180deg,#2d2218 0%,#241a12 100%);
+  color:var(--cream);
+  width:260px;
+  transition:width .25s ease;
+  border-right:1px solid var(--line);
+  padding:18px 0;
+  overflow:hidden;
+}
+.app.collapsed .sidebar{width:72px}
+.side-divider{
+  font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);
+  padding:14px 24px 6px;
+  display:flex;align-items:center;
+}
+.app.collapsed .side-divider{
+  justify-content:center;padding:14px 0 6px;font-size:.55rem;letter-spacing:.1em;
+}
+.side-divider::after{
+  content:"";flex:1;height:1px;background:var(--line);margin-left:10px;
+}
+.app.collapsed .side-divider::after{display:none}
+
+.side-nav{list-style:none;padding:0;margin:0}
+.side-nav a{
+  display:flex;align-items:center;justify-content:flex-start;
+  gap:14px;
+  padding:11px 24px;
+  color:var(--cream);text-decoration:none;
+  border-left:3px solid transparent;
+  transition:all .2s;
+  font-weight:500;
+}
+.side-nav a i{font-size:1.15rem;width:24px;text-align:center;color:var(--caramel)}
+.side-nav a:hover{background:rgba(255,255,255,.04)}
+.side-nav a.active{
+  background:linear-gradient(90deg,rgba(200,163,122,.18),transparent);
+  border-left-color:var(--caramel);
+  color:#fff;
+}
+.app.collapsed .side-nav a{justify-content:center;padding:13px 0}
+.app.collapsed .side-nav a span{display:none}
+
+/* ===== Footer ===== */
+.footer{
+  grid-area:footer;
+  background:linear-gradient(180deg,#2d2218 0%,#241a12 100%);border-top:1px solid rgba(212,168,90,.22);border-left:1px solid rgba(212,168,90,.18);
+  color:var(--muted);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 24px;font-size:.85rem;
+  border-top:1px solid var(--line);
+}
+.footer a{color:var(--caramel);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.footer a:hover{color:#fff}
+
+/* ===== Main ===== */
+.main{
+  grid-area:main;
+  padding:28px 32px;
+  background:var(--cream);
+  overflow:auto;
+}
+.page-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:22px;gap:16px;flex-wrap:wrap;
+}
+.page-title{margin:0;font-size:2rem;line-height:1.1}
+.page-title small{
+  display:block;font-family:'Jost',sans-serif;
+  font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--caramel-dk);font-weight:600;margin-bottom:6px;
+}
+.crumbs{font-size:.8rem;color:#8a7860;margin-top:4px}
+.crumbs a{color:var(--caramel-dk);text-decoration:none}
+
+/* ===== Buttons (gradient, vibrant) ===== */
+.btn-fancy{
+  border:0;color:#fff;font-weight:600;
+  padding:10px 20px;border-radius:12px;
+  display:inline-flex;align-items:center;gap:8px;
+  letter-spacing:.04em;
+  box-shadow:var(--shadow-md);
+  transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.btn-fancy:hover{transform:translateY(-2px) scale(1.03);box-shadow:var(--shadow-lg);color:#fff;filter:brightness(1.06)}
+.btn-fancy:active{transform:translateY(0) scale(.98);filter:brightness(.95)}
+
+.btn-add{background:var(--grad-add)}
+.btn-edit{background:var(--grad-edit);padding:7px 14px;border-radius:10px;font-size:.85rem}
+.btn-delete{background:var(--grad-delete);padding:7px 14px;border-radius:10px;font-size:.85rem}
+
+/* ===== Card / Table ===== */
+.card-soft{
+  background:#fff;border:1px solid #ece3d4;border-radius:18px;
+  box-shadow:var(--shadow-sm);overflow:hidden;
+}
+.table-toolbar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 18px;gap:12px;flex-wrap:wrap;
+  border-bottom:1px solid #f0e8d9;background:#fdfaf3;
+}
+.form-control,.form-select{
+  border-radius:10px;border:1px solid #e3d8c2;background:#fff;
+  font-family:inherit;font-size:.9rem;
+}
+.form-control:focus,.form-select:focus{
+  border-color:var(--caramel);box-shadow:0 0 0 .2rem rgba(200,163,122,.25);
+}
+.input-icon{position:relative}
+.input-icon i{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#a8966f}
+.input-icon .form-control{padding-left:36px;min-width:260px}
+
+.table{margin:0;color:#2b231b}
+.table thead th{
+  background:#fdfaf3;color:var(--coffee);
+  font-weight:600;font-size:.78rem;letter-spacing:.12em;
+  text-transform:uppercase;border-bottom:1px solid #ece3d4;
+  white-space:nowrap;cursor:pointer;user-select:none;
+}
+.table thead th .sort{margin-left:6px;opacity:.45;font-size:.75rem}
+.table thead th.sorted .sort{opacity:1;color:var(--caramel-dk)}
+.table tbody td{vertical-align:middle;border-color:#f4ecdd;padding:14px 12px}
+.table tbody tr:hover{background:#fbf6ec}
+.thumb{
+  width:46px;height:46px;border-radius:10px;object-fit:cover;
+  box-shadow:var(--shadow-sm);background:#eee;
+}
+.badge-cat{
+  background:var(--cream-2);color:var(--coffee);
+  font-weight:500;letter-spacing:.05em;
+  padding:5px 10px;border-radius:999px;font-size:.72rem;text-transform:uppercase;
+}
+.badge-featured{
+  background:var(--grad-delete);color:#fff;
+  padding:5px 10px;border-radius:999px;font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+}
+.table-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 18px;border-top:1px solid #f0e8d9;background:#fdfaf3;
+  font-size:.85rem;color:#6f5d44;flex-wrap:wrap;gap:10px;
+}
+.pagination{margin:0;gap:4px}
+.page-link{
+  border:1px solid #e3d8c2;color:var(--coffee);border-radius:8px!important;
+  margin:0 2px;min-width:36px;text-align:center;font-weight:500;
+}
+.page-item.active .page-link{
+  background:var(--grad-add);border-color:transparent;color:#fff;
+}
+
+/* ===== Form (create/update) ===== */
+.form-card{padding:28px 30px}
+.form-label{font-weight:600;color:var(--coffee);font-size:.85rem;letter-spacing:.04em}
+.form-text{color:#8a7860}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px}
+.form-grid .full{grid-column:1 / -1}
+textarea.form-control{min-height:120px}
+.image-preview{
+  width:100%;aspect-ratio:1/1;max-width:180px;
+  border:1px dashed #d6c6a8;border-radius:14px;background:#fdfaf3;
+  display:flex;align-items:center;justify-content:center;color:#b29977;
+  overflow:hidden;
+}
+.image-preview img{width:100%;height:100%;object-fit:cover}
+.form-actions{
+  display:flex;justify-content:flex-end;gap:10px;
+  padding-top:18px;margin-top:22px;border-top:1px solid #f0e8d9;
+}
+.btn-ghost{
+  background:transparent;border:1px solid #d6c6a8;color:var(--coffee);
+  padding:10px 20px;border-radius:12px;font-weight:600;
+}
+.btn-ghost:hover{background:var(--cream-2)}
+
+@media (max-width: 768px){
+  .app{grid-template-columns:1fr!important}
+  .sidebar{position:fixed;top:64px;bottom:48px;left:0;z-index:40;transform:translateX(-100%)}
+  .app.mobile-open .sidebar{transform:translateX(0)}
+  .main{padding:18px}
+  .form-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <!-- ============ TOPBAR ============ -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="bean-tile"><span class="bean">☕</span></span>
+      <span class="brand-text"><i>the</i><b>cafert</b></span>
+    </div>
+
+    <button class="topbar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+      <i class="bi bi-list" style="font-size:1.4rem"></i>
+    </button>
+
+    <div class="topbar-actions">
+      <a href="/" target="_blank" class="icon-btn" title="Open site">
+        <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+      <a href="#" class="icon-btn" title="Account"><i class="bi bi-person"></i></a>
+    </div>
+  </header>
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <div class="side-divider">Overview</div>
+    <ul class="side-nav">
+      <li><a href="#" class="active"><i class="bi bi-speedometer2"></i><span>Dashboard</span></a></li>
+    </ul>
+
+    <div class="side-divider">Content</div>
+    <ul class="side-nav">
+      <li><a href="menu/index.html"><i class="bi bi-journal-richtext"></i><span>Menu</span></a></li>
+      <li><a href="team/index.html"><i class="bi bi-people"></i><span>Team</span></a></li>
+    </ul>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+    <div class="page-header">
+      <div>
+        <h1 class="page-title"><small>Dashboard</small>Welcome back, Zaruyashar</h1>
+        <div class="crumbs">Home / Dashboard</div>
+      </div>
+    </div>
+
+    <div class="card-soft p-4">
+      <p class="mb-0">This is the layout shell. Replace this block with your page content (see <code>index.html</code>, <code>create.html</code>, <code>update.html</code>).</p>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div>
+      <span id="year"></span> &copy;
+      <a href="https://github.com/zaruyashar" target="_blank" rel="noopener">
+        <i class="bi bi-github"></i> zaruyashar
+      </a>
+    </div>
+    <div>Project #1 of SoftITo Backend Development Program</div>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('sidebarToggle').addEventListener('click', () => {
+    document.getElementById('app').classList.toggle('collapsed');
+  });
+</script>
+</body>
+</html>
