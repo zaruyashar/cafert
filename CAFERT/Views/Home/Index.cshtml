@@ -1,8 +1,209 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@model CAFERT.Models.HomeViewModel
+@{
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Hero Section (Matching the Live Template Kit) -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Text Content on the Left -->
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up">
+                <!-- Rotating animated headline -->
+                <div class="animated-headline">
+                    <span>AMAZING</span>
+                    <div class="headline-words" id="rotatingWords">
+                        <span class="headline-word active">BREAKFAST</span>
+                        <span class="headline-word">DINNER</span>
+                        <span class="headline-word">EVENTS</span>
+                    </div>
+                </div>
+
+                <h1 class="hero-title">We Love <br><i>What We Do</i></h1>
+                <p class="hero-desc">
+                    At Cafert, we serve freshly brewed specialty coffee, artisanal baked goods, and savory gourmet dishes made from locally sourced, organic ingredients.
+                </p>
+                <div class="hero-actions">
+                    <a asp-controller="Menu" asp-action="Index" class="btn-cafert-caramel">
+                        Explore Menu <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Image on the Right -->
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="hero-img-container">
+                    <!-- Original high quality coffee image from the Elementor Template Kit -->
+                    <img src="https://cafert.templatekit.co/wp-content/uploads/2021/10/barista-making-classic-cappuccino.jpg" alt="Cafert Coffee Art Specialty" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Philosophy / About Section -->
+<section class="py-5 bg-white border-top border-bottom">
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <!-- Live template about image -->
+                <img src="https://cafert.templatekit.co/wp-content/uploads/2021/10/food-2.jpg" class="img-fluid rounded-0 border shadow-sm" alt="Our Cooking Passion" />
+            </div>
+            <div class="col-md-6 ps-md-5">
+                <span class="hero-subtitle">OUR PHILOSOPHY</span>
+                <h2 class="serif-font mb-4" style="font-size: 2.8rem; text-transform: none;">We Cook with Passion</h2>
+                <p class="text-secondary mb-4" style="font-size: 1.05rem;">
+                    Every single dish that exits our kitchen represents our commitment to taste and quality. From slowly-steeped broths to double-proofed artisanal sourdoughs, we execute traditional cooking methods with a modern flare.
+                </p>
+                <a asp-controller="Team" asp-action="Index" class="btn-cafert-caramel">
+                    Meet the Chefs <i class="bi bi-people-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Specialties Section (Originally Services) -->
+<section class="services-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="hero-subtitle">OUR SPECIALTIES</span>
+            <h2 class="serif-font" style="font-size: 3rem; text-transform: none;">What We Offer</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="service-card border">
+                    <div class="service-icon"><i class="bi bi-cup-hot"></i></div>
+                    <h3 class="serif-font" style="text-transform: none;">Specialty Coffee</h3>
+                    <p class="text-secondary mb-0">Organic single-origin coffee beans sourced directly from premium micro-lot farms in Colombia and Ethiopia, roasted locally in small batches.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card border">
+                    <div class="service-icon"><i class="bi bi-cake2"></i></div>
+                    <h3 class="serif-font" style="text-transform: none;">Artisanal Bakery</h3>
+                    <p class="text-secondary mb-0">Freshly baked stone-ground sourdough breads, flaky French butter croissants, and delicate pastries baked fresh daily at 4:00 AM.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card border">
+                    <div class="service-icon"><i class="bi bi-stars"></i></div>
+                    <h3 class="serif-font" style="text-transform: none;">Special Events</h3>
+                    <p class="text-secondary mb-0">Whether hosting private anniversary dining or corporate functions, our team coordinates bespoke, tailor-made menu programs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dynamic Featured Menu Section -->
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <span class="hero-subtitle">CHEF'S RECOMMENDATION</span>
+            <h2 class="serif-font" style="font-size: 3rem; text-transform: none;">Featured Dishes</h2>
+        </div>
+
+        @if (Model.FeaturedItems.Any())
+        {
+            <div class="row g-4 justify-content-center">
+                @foreach (var item in Model.FeaturedItems)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team-card border">
+                            <div class="team-img-wrapper" style="aspect-ratio: 4/3;">
+                                <img src="@(string.IsNullOrEmpty(item.ImageUrl) ? "https://cafert.templatekit.co/wp-content/uploads/2021/10/breakfast-1.jpg" : item.ImageUrl)" alt="@item.Name" />
+                            </div>
+                            <div class="team-info text-start">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge-cat">@item.Category</span>
+                                    <span class="text-primary font-weight-bold" style="font-size: 1.25rem; font-family: var(--font-display-sans);">$@item.Price.ToString("F2")</span>
+                                </div>
+                                <h3 class="serif-font mb-2" style="font-size: 1.5rem; text-transform: none;">
+                                    @item.Name
+                                    @if (item.IsFeatured)
+                                    {
+                                        <span class="badge-featured-public">Featured</span>
+                                    }
+                                </h3>
+                                <p class="text-secondary mb-0" style="font-size: 0.95rem;">@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="text-center mt-5">
+                <a asp-controller="Menu" asp-action="Index" class="btn-cafert-caramel">
+                    View Full Menu <i class="bi bi-journal-richtext"></i>
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5 border rounded bg-light">
+                <p class="text-muted mb-0">No featured items available right now. Visit the admin panel to mark menu items as featured.</p>
+            </div>
+        }
+    </div>
+</section>
+
+<!-- Dynamic Meet the Team Section -->
+<section class="py-5 bg-light border-top">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <span class="hero-subtitle">THE CORE TEAM</span>
+            <h2 class="serif-font" style="font-size: 3rem; text-transform: none;">Meet Our Experts</h2>
+        </div>
+
+        @if (Model.TeamMembers.Any())
+        {
+            <div class="row g-4">
+                @foreach (var member in Model.TeamMembers)
+                {
+                    <div class="col-lg-4 col-md-6 mx-auto">
+                        <div class="team-card border">
+                            <div class="team-img-wrapper">
+                                <img src="@(string.IsNullOrEmpty(member.PhotoUrl) ? "https://cafert.templatekit.co/wp-content/uploads/2021/10/portrait-of-a-bearded-man-smiling-at-the-camera-.jpg" : member.PhotoUrl)" alt="@member.Name" />
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name serif-font" style="text-transform: none;">@member.Name</h3>
+                                <p class="team-role">@member.Role</p>
+                                <p class="team-bio text-secondary">@member.Bio</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="text-center mt-5">
+                <a asp-controller="Team" asp-action="Index" class="btn-cafert-caramel">
+                    View Full Team <i class="bi bi-people-fill"></i>
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5 border rounded bg-white">
+                <p class="text-muted mb-0">No team members loaded. Add team members in the admin panel to display them here.</p>
+            </div>
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Micro-animation JavaScript to cycle the active rotating header text
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('rotatingWords');
+            if (container) {
+                const words = container.querySelectorAll('.headline-word');
+                if (words.length > 0) {
+                    let activeIndex = 0;
+                    setInterval(() => {
+                        words[activeIndex].classList.remove('active');
+                        activeIndex = (activeIndex + 1) % words.length;
+                        words[activeIndex].classList.add('active');
+                    }, 2500);
+                }
+            }
+        });
+    </script>
+}

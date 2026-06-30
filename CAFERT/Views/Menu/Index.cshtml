@@ -1,0 +1,82 @@
+@model List<CAFERT.Models.MenuItem>
+@{
+    ViewData["Title"] = "Our Menu";
+}
+
+<!-- Menu Header -->
+<section class="menu-header-section">
+    <div class="container">
+        <span class="hero-subtitle" style="color: var(--caramel);">THE CAFERT EXPERIENCE</span>
+        <h1 class="serif-font">Our Menu</h1>
+        <p class="mb-0">Freshly prepared, locally sourced, and crafted with love.</p>
+    </div>
+</section>
+
+<!-- Menu List Content -->
+<section class="py-5">
+    <div class="container py-4">
+        @if (Model.Any())
+        {
+            var categories = Model.GroupBy(m => m.Category).OrderBy(g => g.Key);
+
+            foreach (var categoryGroup in categories)
+            {
+                <div class="mb-5">
+                    <h2 class="menu-category-title text-uppercase">@categoryGroup.Key</h2>
+                    
+                    <div class="row g-4">
+                        @foreach (var item in categoryGroup)
+                        {
+                            <div class="col-lg-6">
+                                <div class="p-3 rounded bg-white h-100 border transition-all" style="@(item.IsFeatured ? "border-color: var(--caramel); box-shadow: 0 4px 12px rgba(212, 168, 90, 0.1);" : "border-color: var(--border-color);")">
+                                    <div class="d-flex gap-3">
+                                        <!-- Thumbnail -->
+                                        @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                        {
+                                            <div class="flex-shrink-0">
+                                                <img src="@item.ImageUrl" alt="@item.Name" class="rounded" style="width: 80px; height: 80px; object-fit: cover;" />
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="flex-shrink-0 bg-light rounded d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; color: var(--muted);">
+                                                <i class="bi bi-egg-fried" style="font-size: 1.8rem;"></i>
+                                            </div>
+                                        }
+
+                                        <!-- Details -->
+                                        <div class="flex-grow-1">
+                                            <div class="menu-item-row">
+                                                <h3 class="menu-item-title">
+                                                    @item.Name
+                                                    @if (item.IsFeatured)
+                                                    {
+                                                        <span class="badge-featured-public">Featured</span>
+                                                    }
+                                                </h3>
+                                                <span class="menu-item-dots"></span>
+                                                <span class="menu-item-price">$@item.Price.ToString("F2")</span>
+                                            </div>
+                                            <p class="menu-item-desc mb-0">@item.Description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <i class="bi bi-journal-x" style="font-size: 3rem; color: var(--muted);"></i>
+                <h3 class="serif-font mt-3">Menu is empty</h3>
+                <p class="text-muted">Check back later or add items in the admin panel.</p>
+                <a asp-controller="Dashboard" asp-action="MenuItems" class="btn-cafert-caramel mt-2">
+                    Go to Dashboard
+                </a>
+            </div>
+        }
+    </div>
+</section>

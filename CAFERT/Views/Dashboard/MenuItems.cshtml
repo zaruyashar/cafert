@@ -1,0 +1,92 @@
+@model List<CAFERT.Models.MenuItem>
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Manage Menu Items";
+}
+
+<div class="page-header">
+    <div>
+        <h1 class="page-title"><small>Content</small>Menu Items</h1>
+        <div class="crumbs"><a asp-action="Index">Dashboard</a> / Menu</div>
+    </div>
+    <a asp-action="CreateMenuItem" class="btn-fancy btn-add">
+        <i class="bi bi-plus-lg"></i> Add New Item
+    </a>
+</div>
+
+<div class="card-soft">
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Featured</th>
+                    <th>Sort Order</th>
+                    <th class="text-end" style="padding-right: 24px;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>#@item.Id</td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                {
+                                    <img src="@item.ImageUrl" class="thumb" alt="@item.Name" />
+                                }
+                                else
+                                {
+                                    <div class="thumb d-flex align-items-center justify-content-center bg-light text-muted">
+                                        <i class="bi bi-image" style="font-size: 1.25rem;"></i>
+                                    </div>
+                                }
+                            </td>
+                            <td><strong>@item.Name</strong><br><small class="text-muted d-block text-truncate" style="max-width: 250px;">@item.Description</small></td>
+                            <td><span class="badge-cat">@item.Category</span></td>
+                            <td><strong>$@item.Price.ToString("F2")</strong></td>
+                            <td>
+                                @if (item.IsFeatured)
+                                {
+                                    <span class="badge-featured">Yes</span>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">—</span>
+                                }
+                            </td>
+                            <td>@item.SortOrder</td>
+                            <td class="text-end" style="padding-right: 24px;">
+                                <div class="d-inline-flex gap-2">
+                                    <a asp-action="EditMenuItem" asp-route-id="@item.Id" class="btn-fancy btn-edit">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </a>
+                                    <form asp-action="DeleteMenuItem" asp-route-id="@item.Id" method="post" onsubmit="return confirm('Are you sure you want to delete this menu item?');" class="m-0">
+                                        <button type="submit" class="btn-fancy btn-delete">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="8" class="text-center py-5 text-muted">
+                            <i class="bi bi-journal-x" style="font-size: 2rem;"></i>
+                            <p class="mt-2 mb-0">No menu items found. Click 'Add New Item' to start.</p>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
