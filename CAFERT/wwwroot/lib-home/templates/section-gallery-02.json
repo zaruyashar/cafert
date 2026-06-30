@@ -1,0 +1,201 @@
+{
+    "version": "0.4",
+    "title": "Section Gallery 02",
+    "type": "section",
+    "metadata": {
+        "template_type": "section-gallery",
+        "include_in_zip": "1",
+        "elementor_pro_required": "1",
+        "wp_page_template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "id": "2b963dbe",
+            "settings": {
+                "gap": "no",
+                "content_position": "middle",
+                "structure": "20",
+                "margin": {
+                    "unit": "px",
+                    "top": "150",
+                    "right": 0,
+                    "bottom": "130",
+                    "left": 0,
+                    "isLinked": false
+                },
+                "margin_tablet": {
+                    "unit": "px",
+                    "top": "50",
+                    "right": 0,
+                    "bottom": "100",
+                    "left": 0,
+                    "isLinked": false
+                },
+                "margin_mobile": {
+                    "unit": "px",
+                    "top": "70",
+                    "right": 0,
+                    "bottom": "0",
+                    "left": 0,
+                    "isLinked": false
+                },
+                "hide_tablet": "hidden-tablet",
+                "hide_mobile": "hidden-mobile",
+                "_title": "Gallery"
+            },
+            "elements": [
+                {
+                    "id": "65e1e7a4",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": 25,
+                        "space_between_widgets": 0,
+                        "animation": "fadeInLeft",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "_inline_size_tablet": 25,
+                        "margin_tablet": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "20",
+                            "bottom": "0",
+                            "left": "20",
+                            "isLinked": false
+                        },
+                        "margin_mobile": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "10",
+                            "left": "20",
+                            "isLinked": false
+                        },
+                        "padding_tablet": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "3e918b3f",
+                            "settings": {
+                                "title": "share the happy moments of our guests",
+                                "align": "left",
+                                "__globals__": {
+                                    "typography_typography": "globals\/typography?id=text",
+                                    "title_color": "globals\/colors?id=primary"
+                                },
+                                "header_size": "h3",
+                                "_margin_tablet": {
+                                    "unit": "px",
+                                    "top": "5",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "5b71b5f2",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": 75,
+                        "space_between_widgets": 0,
+                        "_inline_size_tablet": 75,
+                        "animation": "fadeIn",
+                        "animation_delay": 500
+                    },
+                    "elements": [
+                        {
+                            "id": "1c2636cf",
+                            "settings": {
+                                "gallery": [
+                                    {
+                                        "id": 6048,
+                                        "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/wedding-danse.jpg"
+                                    },
+                                    {
+                                        "id": 6047,
+                                        "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/happy-birthday-1-1.jpg"
+                                    },
+                                    {
+                                        "id": 3428,
+                                        "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/group-of-women-celebratining-birthday-and-looking-joyful.jpg"
+                                    },
+                                    {
+                                        "id": 6001,
+                                        "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/toasting-for-birthday.jpg"
+                                    }
+                                ],
+                                "galleries": [
+                                    {
+                                        "gallery_title": "New Gallery",
+                                        "_id": "1a1a5a1"
+                                    }
+                                ],
+                                "thumbnail_image_size": "2048x2048",
+                                "show_all_galleries_label": "All",
+                                "overlay_background": "",
+                                "image_css_filters_hover_css_filter": "custom",
+                                "image_hover_animation": "move-contained-top",
+                                "columns_tablet": 4,
+                                "gap_mobile": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "_padding_tablet": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "20",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "_padding_mobile": {
+                                    "unit": "px",
+                                    "top": "20",
+                                    "right": "20",
+                                    "bottom": "0",
+                                    "left": "20",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "gallery",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ],
+    "page_settings": {
+        "eael_ext_toc_title": "Table of Contents",
+        "template": "elementor_canvas"
+    }
+}

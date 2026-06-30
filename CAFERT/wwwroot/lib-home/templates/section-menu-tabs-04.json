@@ -1,0 +1,270 @@
+{
+    "version": "0.4",
+    "title": "Section Menu Tabs 04",
+    "type": "section",
+    "metadata": {
+        "template_type": "section-gallery",
+        "include_in_zip": "1",
+        "elementor_pro_required": "1",
+        "wp_page_template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "id": "207b3fe5",
+            "settings": {
+                "gap": "no",
+                "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": 0,
+                    "bottom": "130",
+                    "left": 0,
+                    "isLinked": false
+                },
+                "animation": "fadeInUp",
+                "margin_tablet": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": 0,
+                    "bottom": "100",
+                    "left": 0,
+                    "isLinked": false
+                },
+                "margin_mobile": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": 0,
+                    "bottom": "80",
+                    "left": 0,
+                    "isLinked": false
+                },
+                "_title": "Menu",
+                "padding": {
+                    "unit": "px",
+                    "top": "150",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "75a0839a",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null,
+                        "space_between_widgets": 0,
+                        "padding_tablet": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "20",
+                            "bottom": "0",
+                            "left": "20",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "5a3871d8",
+                            "settings": {
+                                "gallery_type": "multiple",
+                                "galleries": [
+                                    {
+                                        "gallery_title": "Breakfasts",
+                                        "_id": "2827ef0",
+                                        "multiple_gallery": [
+                                            {
+                                                "id": 1329,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/breakfast-1.jpg"
+                                            },
+                                            {
+                                                "id": 312,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/dessert.jpg"
+                                            },
+                                            {
+                                                "id": 1481,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/cottage-cheese-pancakes-with-tasty-honey-and-mixed-nuts-syrniki-curd-fritters-.jpg"
+                                            },
+                                            {
+                                                "id": 2386,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/vegetarian-breakfast-.jpg"
+                                            },
+                                            {
+                                                "id": 1556,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/oatmeal-breakfast.jpg"
+                                            },
+                                            {
+                                                "id": 2348,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/breakfast-in-a-bed.jpg"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "gallery_title": "Snacks",
+                                        "multiple_gallery": [
+                                            {
+                                                "id": 1478,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/hummus-vegan-snack.jpg"
+                                            },
+                                            {
+                                                "id": 1466,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/crispy-paneer-chilli-cigar-is-an-indian-starter-or-appetiser-1.jpg"
+                                            },
+                                            {
+                                                "id": 1479,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/snacks.jpg"
+                                            },
+                                            {
+                                                "id": 2401,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/healhy-snack-1.jpg"
+                                            }
+                                        ],
+                                        "_id": "4f66284"
+                                    },
+                                    {
+                                        "gallery_title": "Desserts",
+                                        "multiple_gallery": [
+                                            {
+                                                "id": 1482,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/panna-cotta-dessert-.jpg"
+                                            },
+                                            {
+                                                "id": 1483,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/chocolate-mousse-dessert.jpg"
+                                            },
+                                            {
+                                                "id": 1484,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/dessert-with-sauce-on-plate.jpg"
+                                            },
+                                            {
+                                                "id": 794,
+                                                "url": "https:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/panforte-dessert-1.jpg"
+                                            },
+                                            {
+                                                "id": 2404,
+                                                "url": "https:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/dessert-1.jpg"
+                                            }
+                                        ],
+                                        "_id": "a3a414c"
+                                    },
+                                    {
+                                        "gallery_title": "Drinks",
+                                        "multiple_gallery": [
+                                            {
+                                                "id": 1453,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/barista-making-classic-cappuccino.jpg"
+                                            },
+                                            {
+                                                "id": 1331,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/summer-drinks.jpg"
+                                            },
+                                            {
+                                                "id": 1486,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/a-glass-teapot-with-tea-on-a-wooden-board.jpg"
+                                            },
+                                            {
+                                                "id": 2405,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/strawberry-matcha-latte.jpg"
+                                            },
+                                            {
+                                                "id": 2406,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/iced-americano-or-espresso-tonic-coffee-cold-cocktail.jpg"
+                                            },
+                                            {
+                                                "id": 2413,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/glass-of-cola-with-ice-and-lemon-on-the-white-background.jpg"
+                                            },
+                                            {
+                                                "id": 2412,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/lemonade-lemonade-in-a-glass-cup-on-a-white-wooden-table-.jpg"
+                                            },
+                                            {
+                                                "id": 2409,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/iced-frothy-dalgona-coffee.jpg"
+                                            },
+                                            {
+                                                "id": 2415,
+                                                "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/drink.jpg"
+                                            }
+                                        ],
+                                        "_id": "4681fec"
+                                    }
+                                ],
+                                "lazyload": "",
+                                "columns": 3,
+                                "gap": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "aspect_ratio": "4:3",
+                                "thumbnail_image_size": "large",
+                                "show_all_galleries": "",
+                                "show_all_galleries_label": "",
+                                "pointer": "text",
+                                "animation_text": "float",
+                                "overlay_title": "title",
+                                "overlay_description": "description",
+                                "image_border_width": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "content_padding": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "title_spacing": {
+                                    "unit": "px",
+                                    "size": 5,
+                                    "sizes": []
+                                },
+                                "galleries_titles_space_between": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "galleries_titles_gap": {
+                                    "unit": "px",
+                                    "size": 15,
+                                    "sizes": []
+                                },
+                                "__globals__": {
+                                    "title_typography_typography": "globals\/typography?id=accent",
+                                    "description_typography_typography": "globals\/typography?id=c5f27d9",
+                                    "galleries_titles_typography_typography": "globals\/typography?id=accent"
+                                },
+                                "gap_tablet": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "gap_mobile": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "align_filter_bar_items": "center",
+                                "content_vertical_position": "middle"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "gallery",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ],
+    "page_settings": {
+        "eael_ext_toc_title": "Table of Contents",
+        "template": "elementor_canvas"
+    }
+}

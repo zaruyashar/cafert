@@ -1,0 +1,150 @@
+{
+    "version": "0.4",
+    "title": "Section Instagtam",
+    "type": "section",
+    "metadata": {
+        "template_type": "section-gallery",
+        "include_in_zip": "1",
+        "elementor_pro_required": "1",
+        "wp_page_template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "id": "17a9a128",
+            "settings": {
+                "layout": "full_width",
+                "gap": "no",
+                "_title": "Instagram"
+            },
+            "elements": [
+                {
+                    "id": "743eddb5",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null,
+                        "space_between_widgets": 0
+                    },
+                    "elements": [
+                        {
+                            "id": "60f399fd",
+                            "settings": {
+                                "gallery": [
+                                    {
+                                        "id": 1316,
+                                        "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/mae-mu-ppOPjqAJ3Mw-unsplash-1.jpg"
+                                    },
+                                    {
+                                        "id": 1319,
+                                        "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/olena-sergienko-JjGLEN7T8xI-unsplash.jpg"
+                                    },
+                                    {
+                                        "id": 1329,
+                                        "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/breakfast-1.jpg"
+                                    },
+                                    {
+                                        "id": 1330,
+                                        "url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/breakfast-with-corn-flakes.jpg"
+                                    }
+                                ],
+                                "galleries": [
+                                    {
+                                        "gallery_title": "New Gallery",
+                                        "_id": "fcc74b0"
+                                    }
+                                ],
+                                "gap": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "thumbnail_image_size": "large",
+                                "show_all_galleries_label": "All",
+                                "image_border_width": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "image_border_radius": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "image_hover_animation": "move-contained-top",
+                                "content_alignment": "left",
+                                "content_vertical_position": "middle",
+                                "content_padding": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "title_typography_typography": "custom",
+                                "title_typography_font_family": "Raleway",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 24,
+                                    "sizes": []
+                                },
+                                "title_typography_font_weight": "600",
+                                "title_typography_text_transform": "capitalize",
+                                "title_typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.399999999999999911182158029987476766109466552734375,
+                                    "sizes": []
+                                },
+                                "title_spacing": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "description_typography_typography": "custom",
+                                "description_typography_font_family": "Montserrat",
+                                "description_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "description_typography_font_weight": "400",
+                                "description_typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.6999999999999999555910790149937383830547332763671875,
+                                    "sizes": []
+                                },
+                                "content_hover_animation": "enter-from-left",
+                                "__globals__": {
+                                    "image_border_color_hover": "",
+                                    "title_typography_typography": "globals\/typography?id=text",
+                                    "description_typography_typography": "globals\/typography?id=43fd4b2",
+                                    "image_border_color": ""
+                                },
+                                "overlay_background": "",
+                                "columns_mobile": 2,
+                                "gap_tablet": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "gap_mobile": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "gallery",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ],
+    "page_settings": {
+        "eael_ext_toc_title": "Table of Contents",
+        "template": "elementor_canvas"
+    }
+}

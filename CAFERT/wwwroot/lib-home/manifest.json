@@ -1,0 +1,2891 @@
+{
+    "manifest_version": "1.0.21",
+    "title": "Cafert",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/templatekit.co",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home Page 1",
+            "screenshot": "screenshots\/home-page-1.jpg",
+            "source": "templates\/home-page-1.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/home-page-1\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home Page 2",
+            "screenshot": "screenshots\/home-page-2.jpg",
+            "source": "templates\/home-page-2.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/home-page-2\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About Us",
+            "screenshot": "screenshots\/about-us.jpg",
+            "source": "templates\/about-us.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/about-us\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-about",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Menu",
+            "screenshot": "screenshots\/menu.jpg",
+            "source": "templates\/menu.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/menu\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-pricing",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Services",
+            "screenshot": "screenshots\/services.jpg",
+            "source": "templates\/services.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/services\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-services",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/?elementor_library=blog",
+            "type": "archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "archive",
+                "elementor_pro_conditions": [
+                    "include\/archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Archive\" template for Elementor Pro.",
+                    "This template will display on: All Archives."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/?elementor_library=single-post",
+            "type": "single-post",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-post",
+                "elementor_pro_conditions": [
+                    "include\/singular\/post"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Post\" template for Elementor Pro.",
+                    "This template will display on: Posts."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Team",
+            "screenshot": "screenshots\/team.jpg",
+            "source": "templates\/team.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/team\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-team",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "404",
+            "screenshot": "screenshots\/404.png",
+            "source": "templates\/404.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/?elementor_library=error-page",
+            "type": "error-404",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "error-404",
+                "elementor_pro_conditions": [
+                    "include\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Error 404\" template for Elementor Pro.",
+                    "This template will display on: 404 Page."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact Us",
+            "screenshot": "screenshots\/contact-us.jpg",
+            "source": "templates\/contact-us.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/contact-us\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Reservations",
+            "screenshot": "screenshots\/reservations.jpg",
+            "source": "templates\/reservations.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/reservations\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Menu 02",
+            "screenshot": "screenshots\/menu-02.png",
+            "source": "templates\/menu-02.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/?elementor_library=menu",
+            "type": "popup",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-popup",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "popup",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Popup\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Breadcrumbs",
+            "screenshot": "screenshots\/section-breadcrumbs.png",
+            "source": "templates\/section-breadcrumbs.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-breadcrumbs\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-other",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Form Contact Us",
+            "screenshot": "screenshots\/section-form-contact-us.png",
+            "source": "templates\/section-form-contact-us.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/copy-of-section-form-reservation\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Testimonials Card",
+            "screenshot": "screenshots\/section-testimonials-card.png",
+            "source": "templates\/section-testimonials-card.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-testimonials-card\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-testimonial",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Brands",
+            "screenshot": "screenshots\/section-brands.png",
+            "source": "templates\/section-brands.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/copy-of-copy-of-section-%d1%81hart\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-logo-grid",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section \u0421hart",
+            "screenshot": "screenshots\/section-hart.png",
+            "source": "templates\/section-hart.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-%d1%81hart\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-other",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Services",
+            "screenshot": "screenshots\/section-services.png",
+            "source": "templates\/section-services.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-services\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-services",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Video",
+            "screenshot": "screenshots\/section-video.png",
+            "source": "templates\/section-video.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-video\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-other",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Instagtam",
+            "screenshot": "screenshots\/section-instagtam.png",
+            "source": "templates\/section-instagtam.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-instagtam\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-gallery",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Team",
+            "screenshot": "screenshots\/section-team.png",
+            "source": "templates\/section-team.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-team\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-team",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Blog 02",
+            "screenshot": "screenshots\/section-blog-02.png",
+            "source": "templates\/section-blog-02.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-blog-02\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Banner Contact Us",
+            "screenshot": "screenshots\/section-banner-contact-us.png",
+            "source": "templates\/section-banner-contact-us.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-banner-contact-us\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Gallery 02",
+            "screenshot": "screenshots\/section-gallery-02.png",
+            "source": "templates\/section-gallery-02.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-gallery-02\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-gallery",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.png",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/?elementor_library=footer",
+            "type": "footer",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Main Banner",
+            "screenshot": "screenshots\/section-main-banner.png",
+            "source": "templates\/section-main-banner.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-main-banner\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-other",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Banners",
+            "screenshot": "screenshots\/section-banners.png",
+            "source": "templates\/section-banners.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/copy-of-section-banner-contact-us\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Banner",
+            "screenshot": "screenshots\/section-banner.png",
+            "source": "templates\/section-banner.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-banner\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Menu 01",
+            "screenshot": "screenshots\/section-menu-01.png",
+            "source": "templates\/section-menu-01.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-pricing",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section About",
+            "screenshot": "screenshots\/section-about.png",
+            "source": "templates\/section-about.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-about\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-about",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Hero 02",
+            "screenshot": "screenshots\/section-hero-02.png",
+            "source": "templates\/section-hero-02.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-hero-02\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-hero",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Blog Image with Posts",
+            "screenshot": "screenshots\/section-blog-image-with-posts.png",
+            "source": "templates\/section-blog-image-with-posts.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-blog-image-with-posts\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Testimonials Beige Background",
+            "screenshot": "screenshots\/section-testimonials-beige-background.png",
+            "source": "templates\/section-testimonials-beige-background.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-testimonials-beige-background\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-testimonial",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Gallery Grid",
+            "screenshot": "screenshots\/gallery-grid.png",
+            "source": "templates\/gallery-grid.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/gallery-grid\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-gallery",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Hero",
+            "screenshot": "screenshots\/section-hero.png",
+            "source": "templates\/section-hero.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/hero-section\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-hero",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Menu Accordion 03",
+            "screenshot": "screenshots\/section-menu-accordion-03.png",
+            "source": "templates\/section-menu-accordion-03.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-menu-accordion-03\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-other",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Menu 02",
+            "screenshot": "screenshots\/section-menu-02.png",
+            "source": "templates\/section-menu-02.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-menu-02\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-pricing",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Menu Tabs 04",
+            "screenshot": "screenshots\/section-menu-tabs-04.png",
+            "source": "templates\/section-menu-tabs-04.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-menu-tabs-04\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-gallery",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Form Reservation",
+            "screenshot": "screenshots\/section-form-reservation.png",
+            "source": "templates\/section-form-reservation.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/copy-of-section-map\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section CTA",
+            "screenshot": "screenshots\/section-cta.png",
+            "source": "templates\/section-cta.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-cta\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.png",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/?elementor_library=header",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section Footer 02",
+            "screenshot": "screenshots\/section-footer-02.png",
+            "source": "templates\/section-footer-02.json",
+            "preview_url": "https:\/\/cafert.templatekit.co\/template-kit\/section-footer-02\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Envato Elements",
+            "version": "2.0.11",
+            "file": "envato-elements\/envato-elements.php",
+            "author": "Envato"
+        },
+        {
+            "name": "Essential Addons for Elementor",
+            "version": "4.9.5",
+            "file": "essential-addons-for-elementor-lite\/essential_adons_elementor.php",
+            "author": "WPDeveloper"
+        },
+        {
+            "name": "Selection Lite",
+            "version": "1.5",
+            "file": "selection-lite\/selection-lite.php",
+            "author": "Merkulove"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.4.7",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor Pro",
+            "version": "3.4.2",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "food-3.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/food-3-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-banner.json",
+                    "name": "Section Banner"
+                },
+                {
+                    "source": "templates\/section-hero.json",
+                    "name": "Section Hero"
+                }
+            ],
+            "filesize": 156422,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-KC5Q6V4"
+        },
+        {
+            "filename": "illustration.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/illustration.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-hero.json",
+                    "name": "Section Hero"
+                }
+            ],
+            "filesize": 49235,
+            "dimensions": [
+                530,
+                601
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/coffee-beans-sketch-set_13683062.htm#page=1&query=coffe&position=19&from_view=search"
+        },
+        {
+            "filename": "food-2.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/food-2-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-hero.json",
+                    "name": "Section Hero"
+                }
+            ],
+            "filesize": 168260,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-7RBYW2D"
+        },
+        {
+            "filename": "breakfast-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/breakfast-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/section-instagtam.json",
+                    "name": "Section Instagtam"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 110592,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-A7CXWJR"
+        },
+        {
+            "filename": "dessert.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/dessert-800x580.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 95878,
+            "dimensions": [
+                2000,
+                1451
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-8LTUGMB"
+        },
+        {
+            "filename": "cottage-cheese-pancakes-with-tasty-honey-and-mixed-nuts-syrniki-curd-fritters-.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/cottage-cheese-pancakes-with-tasty-honey-and-mixed-nuts-syrniki-curd-fritters--800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/section-main-banner.json",
+                    "name": "Section Main Banner"
+                },
+                {
+                    "source": "templates\/section-banners.json",
+                    "name": "Section Banners"
+                },
+                {
+                    "source": "templates\/section-menu-02.json",
+                    "name": "Section Menu 02"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 134238,
+            "dimensions": [
+                2000,
+                1334
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PCT8MAH"
+        },
+        {
+            "filename": "vegetarian-breakfast-.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/vegetarian-breakfast--800x519.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 174016,
+            "dimensions": [
+                2000,
+                1298
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-AKAT5QF"
+        },
+        {
+            "filename": "oatmeal-breakfast.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/oatmeal-breakfast-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 185034,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-ZP8VJE9"
+        },
+        {
+            "filename": "breakfast-in-a-bed.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/breakfast-in-a-bed-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 315270,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-NW4ZM3R"
+        },
+        {
+            "filename": "hummus-vegan-snack.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/hummus-vegan-snack-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 203932,
+            "dimensions": [
+                2000,
+                1335
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-83W8L3L"
+        },
+        {
+            "filename": "crispy-paneer-chilli-cigar-is-an-indian-starter-or-appetiser-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/crispy-paneer-chilli-cigar-is-an-indian-starter-or-appetiser-1-800x1199.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                },
+                {
+                    "source": "templates\/section-cta.json",
+                    "name": "Section CTA"
+                }
+            ],
+            "filesize": 93813,
+            "dimensions": [
+                1335,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-3SB5XF4"
+        },
+        {
+            "filename": "snacks.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/snacks-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 158517,
+            "dimensions": [
+                1333,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-8SZGDGY"
+        },
+        {
+            "filename": "healhy-snack-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/healhy-snack-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                },
+                {
+                    "source": "templates\/section-menu-02.json",
+                    "name": "Section Menu 02"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 174087,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PW4M6GC"
+        },
+        {
+            "filename": "panna-cotta-dessert-.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/panna-cotta-dessert--800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 119420,
+            "dimensions": [
+                1333,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-E8K6L6Z"
+        },
+        {
+            "filename": "chocolate-mousse-dessert.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/chocolate-mousse-dessert-800x1066.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 154751,
+            "dimensions": [
+                1501,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-3J75VGD"
+        },
+        {
+            "filename": "dessert-with-sauce-on-plate.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/dessert-with-sauce-on-plate-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 175326,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-NXTJ9EX"
+        },
+        {
+            "filename": "panforte-dessert-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/panforte-dessert-1-800x532.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/section-about.json",
+                    "name": "Section About"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 237806,
+            "dimensions": [
+                2000,
+                1331
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-FV3EHPU"
+        },
+        {
+            "filename": "dessert-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/dessert-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 91473,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-NUPC2B5"
+        },
+        {
+            "filename": "barista-making-classic-cappuccino.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/barista-making-classic-cappuccino-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 140625,
+            "dimensions": [
+                2000,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-T8AWYU9"
+        },
+        {
+            "filename": "summer-drinks.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/summer-drinks-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 121597,
+            "dimensions": [
+                1333,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-FHZE6FQ"
+        },
+        {
+            "filename": "a-glass-teapot-with-tea-on-a-wooden-board.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/a-glass-teapot-with-tea-on-a-wooden-board-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 188429,
+            "dimensions": [
+                2000,
+                1335
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-F5EPPF5"
+        },
+        {
+            "filename": "strawberry-matcha-latte.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/strawberry-matcha-latte-800x1193.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 107528,
+            "dimensions": [
+                1341,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PQ277H4"
+        },
+        {
+            "filename": "iced-americano-or-espresso-tonic-coffee-cold-cocktail.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/iced-americano-or-espresso-tonic-coffee-cold-cocktail-800x1141.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 93086,
+            "dimensions": [
+                1402,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-ND7DLZ6"
+        },
+        {
+            "filename": "glass-of-cola-with-ice-and-lemon-on-the-white-background.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/glass-of-cola-with-ice-and-lemon-on-the-white-background-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 93984,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-389LQXC"
+        },
+        {
+            "filename": "lemonade-lemonade-in-a-glass-cup-on-a-white-wooden-table-.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/lemonade-lemonade-in-a-glass-cup-on-a-white-wooden-table--800x1119.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 71422,
+            "dimensions": [
+                1430,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-P8FE7BX"
+        },
+        {
+            "filename": "iced-frothy-dalgona-coffee.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/iced-frothy-dalgona-coffee-800x1245.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/section-banners.json",
+                    "name": "Section Banners"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 150393,
+            "dimensions": [
+                1285,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-5M7AY37"
+        },
+        {
+            "filename": "drink.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/drink-800x1000.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-menu-tabs-04.json",
+                    "name": "Section Menu Tabs 04"
+                }
+            ],
+            "filesize": 179309,
+            "dimensions": [
+                1600,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-JWCF8HZ"
+        },
+        {
+            "filename": "illustration-1.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/illustration-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/gallery-grid.json",
+                    "name": "Gallery Grid"
+                }
+            ],
+            "filesize": 17422,
+            "dimensions": [
+                361,
+                356
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/hand-drawn-sketch-healthy-food-background_5486658.htm#page=1&query=food&position=1&from_view=search"
+        },
+        {
+            "filename": "trinh-minh-th-wWNHT-H9h94-unsplash-1-Copy.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/trinh-minh-th-wWNHT-H9h94-unsplash-1-Copy.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/gallery-grid.json",
+                    "name": "Gallery Grid"
+                }
+            ],
+            "filesize": 148752,
+            "dimensions": [
+                626,
+                938
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/wWNHT-H9h94"
+        },
+        {
+            "filename": "priscilla-du-preez-_BUlk40NTNU-unsplash-Copy.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/priscilla-du-preez-_BUlk40NTNU-unsplash-Copy.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/gallery-grid.json",
+                    "name": "Gallery Grid"
+                }
+            ],
+            "filesize": 371130,
+            "dimensions": [
+                741,
+                1109
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/_BUlk40NTNU"
+        },
+        {
+            "filename": "tavis-beck-mAAcR1LR0mo-unsplash-Copy.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/tavis-beck-mAAcR1LR0mo-unsplash-Copy.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/gallery-grid.json",
+                    "name": "Gallery Grid"
+                }
+            ],
+            "filesize": 211664,
+            "dimensions": [
+                741,
+                926
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/mAAcR1LR0mo"
+        },
+        {
+            "filename": "sourdough-starter-yeast-ingredients.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/sourdough-starter-yeast-ingredients-800x532.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-testimonials-beige-background.json",
+                    "name": "Section Testimonials Beige Background"
+                }
+            ],
+            "filesize": 205601,
+            "dimensions": [
+                2000,
+                1331
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-M4Y34ZJ"
+        },
+        {
+            "filename": "devin-avery-5iRgh_G0eRY-unsplash-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/devin-avery-5iRgh_G0eRY-unsplash-1-800x313.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/section-testimonials-beige-background.json",
+                    "name": "Section Testimonials Beige Background"
+                }
+            ],
+            "filesize": 83118,
+            "dimensions": [
+                2048,
+                800
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/5iRgh_G0eRY"
+        },
+        {
+            "filename": "bg.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/bg-800x591.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/section-testimonials-beige-background.json",
+                    "name": "Section Testimonials Beige Background"
+                }
+            ],
+            "filesize": 7773,
+            "dimensions": [
+                960,
+                709
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "quote.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/quote.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/section-testimonials-beige-background.json",
+                    "name": "Section Testimonials Beige Background"
+                }
+            ],
+            "filesize": 619,
+            "dimensions": [
+                200,
+                177
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.flaticon.com\/free-icon\/straight-quotes_1098?term=quote&page=1&position=23&page=1&position=23&related_id=1098&origin=search"
+        },
+        {
+            "filename": "panforte-dessert.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/panforte-dessert-800x1165.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-blog-image-with-posts.json",
+                    "name": "Section Blog Image with Posts"
+                }
+            ],
+            "filesize": 202494,
+            "dimensions": [
+                1373,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-RQHPQS6"
+        },
+        {
+            "filename": "ice-latte.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/ice-latte-800x1055.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                },
+                {
+                    "source": "templates\/section-blog-image-with-posts.json",
+                    "name": "Section Blog Image with Posts"
+                }
+            ],
+            "filesize": 110967,
+            "dimensions": [
+                1516,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-G6Y6LHP"
+        },
+        {
+            "filename": "oval.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/oval.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-1.json",
+                    "name": "Home Page 1"
+                }
+            ],
+            "filesize": 10507,
+            "dimensions": [
+                700,
+                700
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Cafert_tablet.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/Cafert_tablet.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 852,
+            "dimensions": [
+                121,
+                24
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "friends-having-wine-tasting-or-celebrating-event-with-wine.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/friends-having-wine-tasting-or-celebrating-event-with-wine-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/section-hero-02.json",
+                    "name": "Section Hero 02"
+                }
+            ],
+            "filesize": 158179,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-LK4CDY8"
+        },
+        {
+            "filename": "illustration-2.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/illustration-2.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/section-hero-02.json",
+                    "name": "Section Hero 02"
+                }
+            ],
+            "filesize": 46225,
+            "dimensions": [
+                680,
+                1198
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/hand-drawn-sketch-healthy-food-background_5486658.htm#page=1&query=food&position=1&from_view=search"
+        },
+        {
+            "filename": "hands-in-the-air-while-dancing-on-the-dance-floor-at-a-party.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/hands-in-the-air-while-dancing-on-the-dance-floor-at-a-party-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-services.json",
+                    "name": "Section Services"
+                }
+            ],
+            "filesize": 216362,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-U6YBVHL"
+        },
+        {
+            "filename": "wedding-danse.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/wedding-danse-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-gallery-02.json",
+                    "name": "Section Gallery 02"
+                }
+            ],
+            "filesize": 130089,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-8KVB7LQ"
+        },
+        {
+            "filename": "happy-birthday-1-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/happy-birthday-1-1-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-gallery-02.json",
+                    "name": "Section Gallery 02"
+                }
+            ],
+            "filesize": 247807,
+            "dimensions": [
+                2000,
+                1334
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-AQGSWDY"
+        },
+        {
+            "filename": "group-of-women-celebratining-birthday-and-looking-joyful.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/group-of-women-celebratining-birthday-and-looking-joyful-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-gallery-02.json",
+                    "name": "Section Gallery 02"
+                }
+            ],
+            "filesize": 184109,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-5DVY6GH"
+        },
+        {
+            "filename": "toasting-for-birthday.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/toasting-for-birthday-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-gallery-02.json",
+                    "name": "Section Gallery 02"
+                }
+            ],
+            "filesize": 137625,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-FNLDPQV"
+        },
+        {
+            "filename": "slashio-photography-Dnkz_Wh8IiM-unsplash.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/slashio-photography-Dnkz_Wh8IiM-unsplash-800x1164.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/section-video.json",
+                    "name": "Section Video"
+                }
+            ],
+            "filesize": 147775,
+            "dimensions": [
+                1408,
+                2048
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/Dnkz_Wh8IiM"
+        },
+        {
+            "filename": "footer_img.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/footer_img-800x436.png",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                },
+                {
+                    "source": "templates\/section-footer-02.json",
+                    "name": "Section Footer 02"
+                }
+            ],
+            "filesize": 129378,
+            "dimensions": [
+                2048,
+                1117
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/hand-drawn-sketch-healthy-food-background_5486658.htm#page=1&query=food&position=1&from_view=search"
+        },
+        {
+            "filename": "modern-and-simple-cafe-interior-with-wooden-classical-furniture.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/modern-and-simple-cafe-interior-with-wooden-classical-furniture-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                }
+            ],
+            "filesize": 206372,
+            "dimensions": [
+                2000,
+                1335
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-E2DEW8W"
+        },
+        {
+            "filename": "modern-and-simple-cafe-interior-with-wooden-classical-furniture-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/modern-and-simple-cafe-interior-with-wooden-classical-furniture-1-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                }
+            ],
+            "filesize": 206936,
+            "dimensions": [
+                2000,
+                1335
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-KJ9XQ9Q"
+        },
+        {
+            "filename": "modern-and-simple-cafe-interior-with-wooden-classical-furniture-2.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/modern-and-simple-cafe-interior-with-wooden-classical-furniture-2-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                }
+            ],
+            "filesize": 186647,
+            "dimensions": [
+                2000,
+                1335
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-CF64WRN"
+        },
+        {
+            "filename": "coffee-cafe-professional-steam-uniform-appliance-c-PMGJDPJ-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/coffee-cafe-professional-steam-uniform-appliance-c-PMGJDPJ-1-800x941.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/section-team.json",
+                    "name": "Section Team"
+                }
+            ],
+            "filesize": 146963,
+            "dimensions": [
+                1700,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PMGJDPJ"
+        },
+        {
+            "filename": "coffee-business-owner-concept-portrait-of-happy-at-7YYU92J-1-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/coffee-business-owner-concept-portrait-of-happy-at-7YYU92J-1-1-800x941.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/section-team.json",
+                    "name": "Section Team"
+                }
+            ],
+            "filesize": 145459,
+            "dimensions": [
+                1700,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/ru\/coffee-business-owner-concept-portrait-of-happy-at-7YYU92J"
+        },
+        {
+            "filename": "handsome-barista-smiling-at-camera-at-the-coffee-s-PX3TA4F-1-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/handsome-barista-smiling-at-camera-at-the-coffee-s-PX3TA4F-1-1-800x941.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/section-team.json",
+                    "name": "Section Team"
+                }
+            ],
+            "filesize": 154951,
+            "dimensions": [
+                1700,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/ru\/handsome-barista-smiling-at-camera-at-the-coffee-s-PX3TA4F"
+        },
+        {
+            "filename": "mae-mu-ppOPjqAJ3Mw-unsplash-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/mae-mu-ppOPjqAJ3Mw-unsplash-1-800x1000.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/section-instagtam.json",
+                    "name": "Section Instagtam"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 137732,
+            "dimensions": [
+                1639,
+                2048
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/ppOPjqAJ3Mw"
+        },
+        {
+            "filename": "olena-sergienko-JjGLEN7T8xI-unsplash.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/olena-sergienko-JjGLEN7T8xI-unsplash-800x1199.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/section-instagtam.json",
+                    "name": "Section Instagtam"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 229069,
+            "dimensions": [
+                1366,
+                2048
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/JjGLEN7T8xI"
+        },
+        {
+            "filename": "breakfast-with-corn-flakes.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/breakfast-with-corn-flakes-800x1199.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-page-2.json",
+                    "name": "Home Page 2"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/section-instagtam.json",
+                    "name": "Section Instagtam"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 187178,
+            "dimensions": [
+                1335,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-T2SU6EW"
+        },
+        {
+            "filename": "story.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/story.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 1365,
+            "dimensions": [
+                60,
+                60
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/hand-drawn-sketch-healthy-food-background_5486658.htm#page=1&query=food&position=1&from_view=search"
+        },
+        {
+            "filename": "Mission.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/Mission.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 1320,
+            "dimensions": [
+                60,
+                60
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/hand-drawn-sketch-healthy-food-background_5486658.htm#page=1&query=food&position=1&from_view=search"
+        },
+        {
+            "filename": "menu.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/menu.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 2189,
+            "dimensions": [
+                60,
+                60
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/hand-drawn-sketch-healthy-food-background_5486658.htm#page=1&query=food&position=1&from_view=search"
+        },
+        {
+            "filename": "sandwiches-with-fried-egg-and-bacon.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/sandwiches-with-fried-egg-and-bacon-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/section-cta.json",
+                    "name": "Section CTA"
+                }
+            ],
+            "filesize": 167313,
+            "dimensions": [
+                2000,
+                1335
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-U4C6Z9M"
+        },
+        {
+            "filename": "spicy.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/spicy.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 14206,
+            "dimensions": [
+                616,
+                616
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/hand-drawn-sketch-healthy-food-background_5486658.htm#page=1&query=food&position=1&from_view=search"
+        },
+        {
+            "filename": "vector.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/vector.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 10507,
+            "dimensions": [
+                700,
+                700
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "brand_logo.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/brand_logo.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-brands.json",
+                    "name": "Section Brands"
+                }
+            ],
+            "filesize": 768,
+            "dimensions": [
+                170,
+                80
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/logotype-set_16445804.htm#page=1&query=logo%20&position=4"
+        },
+        {
+            "filename": "brand2_logo.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/brand2_logo.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-brands.json",
+                    "name": "Section Brands"
+                }
+            ],
+            "filesize": 1207,
+            "dimensions": [
+                170,
+                80
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/logotype-set_16445804.htm#page=1&query=logo%20&position=4"
+        },
+        {
+            "filename": "g_logo.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/g_logo.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-brands.json",
+                    "name": "Section Brands"
+                }
+            ],
+            "filesize": 1060,
+            "dimensions": [
+                170,
+                80
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/logotype-set_16445804.htm#page=1&query=logo%20&position=4"
+        },
+        {
+            "filename": "k_logo.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/k_logo.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-brands.json",
+                    "name": "Section Brands"
+                }
+            ],
+            "filesize": 933,
+            "dimensions": [
+                170,
+                80
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/logotype-set_16445804.htm#page=1&query=logo%20&position=4"
+        },
+        {
+            "filename": "r_logo.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/r_logo.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-brands.json",
+                    "name": "Section Brands"
+                }
+            ],
+            "filesize": 1171,
+            "dimensions": [
+                170,
+                80
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/logotype-set_16445804.htm#page=1&query=logo%20&position=4"
+        },
+        {
+            "filename": "w_logo.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/w_logo.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-brands.json",
+                    "name": "Section Brands"
+                }
+            ],
+            "filesize": 1009,
+            "dimensions": [
+                170,
+                80
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/ru.freepik.com\/free-vector\/logotype-set_16445804.htm#page=1&query=logo%20&position=4"
+        },
+        {
+            "filename": "concept-of-tasty-lunch-with-plate-of-napoleon-cake-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/concept-of-tasty-lunch-with-plate-of-napoleon-cake-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 101943,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-KP5RB85"
+        },
+        {
+            "filename": "portion-of-classic-napoleon-cake-closeup.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/portion-of-classic-napoleon-cake-closeup-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 173568,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-XAM67VD"
+        },
+        {
+            "filename": "board-with-delicious-napoleon-cake-top-view.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/board-with-delicious-napoleon-cake-top-view-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/section-banners.json",
+                    "name": "Section Banners"
+                }
+            ],
+            "filesize": 342262,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-YEFYR4K"
+        },
+        {
+            "filename": "green-tea-with-ceramic-teapot-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/green-tea-with-ceramic-teapot-1-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/section-banners.json",
+                    "name": "Section Banners"
+                }
+            ],
+            "filesize": 362472,
+            "dimensions": [
+                1333,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-SZBKJ6F"
+        },
+        {
+            "filename": "olena-sergienko-dmGOOXS6Rbs-unsplash-1-1-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/olena-sergienko-dmGOOXS6Rbs-unsplash-1-1-1-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-banner-contact-us.json",
+                    "name": "Section Banner Contact Us"
+                },
+                {
+                    "source": "templates\/section-banners.json",
+                    "name": "Section Banners"
+                }
+            ],
+            "filesize": 56816,
+            "dimensions": [
+                1333,
+                2000
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/dmGOOXS6Rbs"
+        },
+        {
+            "filename": "flat-lay-food.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/flat-lay-food-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 228090,
+            "dimensions": [
+                2000,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-4NQLX54"
+        },
+        {
+            "filename": "joanna-kosinska-xp3TH2cXjLE-unsplash-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/joanna-kosinska-xp3TH2cXjLE-unsplash-1-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-testimonials-card.json",
+                    "name": "Section Testimonials Card"
+                }
+            ],
+            "filesize": 87456,
+            "dimensions": [
+                2048,
+                1367
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/xp3TH2cXjLE"
+        },
+        {
+            "filename": "portrait-closeup-of-beautiful-cheerful-woman-smiling-at-camera.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/portrait-closeup-of-beautiful-cheerful-woman-smiling-at-camera-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-testimonials-card.json",
+                    "name": "Section Testimonials Card"
+                }
+            ],
+            "filesize": 169257,
+            "dimensions": [
+                2000,
+                1334
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-TVNQ977"
+        },
+        {
+            "filename": "portrait-of-a-bearded-man-smiling-at-the-camera-.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/portrait-of-a-bearded-man-smiling-at-the-camera--800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/section-testimonials-card.json",
+                    "name": "Section Testimonials Card"
+                }
+            ],
+            "filesize": 148215,
+            "dimensions": [
+                1333,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-CYU9GC5"
+        },
+        {
+            "filename": "happy-woman-smiling-at-camera-at-home-in-the-kitchen.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/happy-woman-smiling-at-camera-at-home-in-the-kitchen-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-testimonials-card.json",
+                    "name": "Section Testimonials Card"
+                }
+            ],
+            "filesize": 127493,
+            "dimensions": [
+                1333,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PPUB6SH"
+        },
+        {
+            "filename": "heather-barnes-zRTIfp2ySO4-unsplash.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/heather-barnes-zRTIfp2ySO4-unsplash-800x570.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/section-banner-contact-us.json",
+                    "name": "Section Banner Contact Us"
+                }
+            ],
+            "filesize": 116266,
+            "dimensions": [
+                1920,
+                1367
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/zRTIfp2ySO4"
+        },
+        {
+            "filename": "breakfast-with-curd-cheese-pancakes.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/breakfast-with-curd-cheese-pancakes-800x1199.jpg",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 249750,
+            "dimensions": [
+                1335,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-36DGJY7"
+        },
+        {
+            "filename": "food-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/food-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 166763,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-YHWEMYM"
+        },
+        {
+            "filename": "pasta-spaghetti-with-ingredients-for-cooking-pasta.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/pasta-spaghetti-with-ingredients-for-cooking-pasta-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 173175,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-55ERF37"
+        },
+        {
+            "filename": "pretty-barista-smiling-at-camera-at-the-coffee-sho-PPS7RBN-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/pretty-barista-smiling-at-camera-at-the-coffee-sho-PPS7RBN-1-800x941.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 134377,
+            "dimensions": [
+                1700,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PPS7RBN"
+        },
+        {
+            "filename": "cafe-or-shop-employees-portrait-55RM3LL-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/cafe-or-shop-employees-portrait-55RM3LL-1-800x941.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 184388,
+            "dimensions": [
+                1700,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-55RM3LL"
+        },
+        {
+            "filename": "coffee-business-owner-concept-portrait-of-happy-yo-VEW95H9-1-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/coffee-business-owner-concept-portrait-of-happy-yo-VEW95H9-1-1-800x941.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 167579,
+            "dimensions": [
+                1700,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/ru\/coffee-business-owner-concept-portrait-of-happy-yo-VEW95H9"
+        },
+        {
+            "filename": "Logo_white.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/Logo_white.png",
+            "templates": [
+                {
+                    "source": "templates\/404.json",
+                    "name": "404"
+                }
+            ],
+            "filesize": 1865,
+            "dimensions": [
+                197,
+                76
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "logo_white_404.png",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/logo_white_404.png",
+            "templates": [
+                {
+                    "source": "templates\/404.json",
+                    "name": "404"
+                },
+                {
+                    "source": "templates\/menu-02.json",
+                    "name": "Menu 02"
+                }
+            ],
+            "filesize": 877,
+            "dimensions": [
+                121,
+                24
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "404img.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/404img-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/404.json",
+                    "name": "404"
+                }
+            ],
+            "filesize": 31682,
+            "dimensions": [
+                2048,
+                1366
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.freepik.com\/free-psd\/top-view-table-dishes-mock-up_13912182.htm"
+        },
+        {
+            "filename": "food-4.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/food-4-800x334.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                }
+            ],
+            "filesize": 73250,
+            "dimensions": [
+                2000,
+                834
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-CFMC24X"
+        },
+        {
+            "filename": "close-up-image-of-a-table-on-a-festive-event-party-or-wedding-reception-.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/close-up-image-of-a-table-on-a-festive-event-party-or-wedding-reception--800x505.jpg",
+            "templates": [
+                {
+                    "source": "templates\/reservations.json",
+                    "name": "Reservations"
+                }
+            ],
+            "filesize": 126587,
+            "dimensions": [
+                2000,
+                1263
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-8HJMPNW"
+        },
+        {
+            "filename": "img--e1634817397724.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/09\/img--e1634817397724.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu-02.json",
+                    "name": "Menu 02"
+                }
+            ],
+            "filesize": 52267,
+            "dimensions": [
+                572,
+                796
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/71u2fOofI-U"
+        },
+        {
+            "filename": "food-and-snacks.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/food-and-snacks-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu-02.json",
+                    "name": "Menu 02"
+                }
+            ],
+            "filesize": 80013,
+            "dimensions": [
+                1333,
+                2000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-5ZR2QFQ"
+        },
+        {
+            "filename": "coffee-1.jpg",
+            "thumbnail_url": "http:\/\/cafert.templatekit.co\/wp-content\/uploads\/sites\/10\/2021\/10\/coffee-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 235027,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-S82DFSZ"
+        }
+    ]
+}
