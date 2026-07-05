@@ -1,12 +1,15 @@
 # ☕ The CAFERT 
 
-This is Project #1 of the SoftITo Backend Development program. It is a dynamic web application built for a cafe, featuring a public-facing landing page and an admin dashboard to easily manage menu items, featured dishes, and team members.
+This is Project #1 of the SoftITo Backend Development program. It is a dynamic web application built for a cafe, featuring a public-facing landing page and an admin dashboard to easily manage menu items, featured dishes, and team members. The admin dashboard is secured with ASP.NET Core Identity: registration, login, and session management, an authenticated account area with in-session password change and email-inclusive profile editing, and a token-based forgot-password flow (no outbound email service — the reset token is displayed on-screen for demo purposes). The public landing page and admin dashboard stay cleanly separated: login opens the dashboard in a new tab, and all account/session actions live in a profile dropdown inside the dashboard rather than the public site.
+
 
 ## Tech Stack
 
 * C# .NET Core MVC
 * Entity Framework Core
 * MS SQL Server
+* ASP.NET Core Identity (EF Core store, cookie-based authentication, account lockout policy, token-based password reset)
+
 
 ## Screenshots
 
@@ -36,3 +39,8 @@ This is Project #1 of the SoftITo Backend Development program. It is a dynamic w
 
 ### Admin Dashboard - Menu Items Management
 <img width="3035" height="1917" alt="9" src="https://github.com/user-attachments/assets/d51f4b4f-402c-4615-9944-dd9ca15f6cb4" />
+
+### Identity/Auth Integration
+<img width="3069" height="1917" alt="x" src="https://github.com/user-attachments/assets/dd5116de-2dca-41fc-b353-235b2911504e" />
+<img width="3069" height="1917" alt="y" src="https://github.com/user-attachments/assets/2b837809-afd3-4f52-b37d-b03549a9837e" />
+<img width="3069" height="1917" alt="z" src="https://github.com/user-attachments/assets/de5c4c71-2073-4220-9920-8fe55e7d7ec4" />
