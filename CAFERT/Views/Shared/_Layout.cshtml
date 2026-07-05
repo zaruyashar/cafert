@@ -1,3 +1,4 @@
+@inject Microsoft.AspNetCore.Identity.UserManager<CAFERT.Models.ApplicationUser> UserManager
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +48,12 @@
                     <a href="https://x.com" class="social-icon"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://youtube.com" class="social-icon"><i class="bi bi-youtube"></i></a>
                 </div>
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    var currentUser = await UserManager.GetUserAsync(User);
+                    var fullName = currentUser?.FullName ?? User.Identity.Name;
+                    <span class="text-white me-2 fw-medium" style="font-size: 0.9rem; letter-spacing: 0.02em;">Hello, @fullName!</span>
+                }
                 <a asp-controller="Dashboard" asp-action="Index" class="btn-admin-pill" title="Admin Dashboard">
                     <i class="bi bi-shield-lock-fill"></i> <span class="d-none d-sm-inline">Admin</span>
                 </a>

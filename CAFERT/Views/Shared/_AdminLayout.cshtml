@@ -1,3 +1,9 @@
+@inject Microsoft.AspNetCore.Identity.UserManager<CAFERT.Models.ApplicationUser> UserManager
+@{
+    var currentUser = await UserManager.GetUserAsync(User);
+    var fullName = currentUser?.FullName ?? "Administrator";
+    var email = currentUser?.Email ?? "";
+}
 <!doctype html>
 <html lang="en">
 <head>
@@ -299,6 +305,11 @@
         }
         .btn-ghost:hover{background:var(--cream-2)}
 
+        .dropdown-menu .dropdown-item:hover {
+            background-color: var(--cream-2);
+            color: var(--caramel-dk) !important;
+        }
+
         @@media (max-width: 768px){
           .app{grid-template-columns:1fr!important}
           .sidebar{position:fixed;top:64px;bottom:48px;left:0;z-index:40;transform:translateX(-100%)}
@@ -325,6 +336,37 @@
         </button>
 
         <div class="topbar-actions">
+            <!-- Profile Dropdown -->
+            <div class="dropdown">
+                <button class="icon-btn dropdown-toggle border-0" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius:50%; width:42px; height:42px;">
+                    <i class="bi bi-person-circle" style="font-size: 1.25rem;"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="profileDropdown" style="background: #fbf8f3; border: 1px solid #ece3d4; border-radius: 12px; box-shadow: var(--shadow-lg); min-width: 230px; margin-top: 10px;">
+                    <li class="px-2 py-1 mb-2 border-bottom border-light">
+                        <div class="fw-bold text-dark" style="font-size: 0.95rem; font-family:'Jost', sans-serif;">@fullName</div>
+                        <div class="text-muted font-monospace" style="font-size: 0.75rem;">@email</div>
+                    </li>
+                    <li>
+                        <a class="dropdown-item py-2 px-3 rounded-3" asp-controller="Account" asp-action="AccountDetails" style="font-size: 0.88rem; color: var(--coffee);">
+                            <i class="bi bi-person me-2" style="color: var(--caramel);"></i>Account Details
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item py-2 px-3 rounded-3" asp-controller="Account" asp-action="ManageChangePassword" style="font-size: 0.88rem; color: var(--coffee);">
+                            <i class="bi bi-key me-2" style="color: var(--caramel);"></i>Change Password
+                        </a>
+                    </li>
+                    <li class="mt-2 border-top pt-2">
+                        <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="d-inline">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="dropdown-item py-2 px-3 rounded-3 text-danger d-flex align-items-center w-100" style="font-size: 0.88rem; border: none; background: none; text-align: left;">
+                                <i class="bi bi-box-arrow-left me-2"></i>Logout
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
             <a href="/" class="icon-btn" title="Open public site" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-box-arrow-up-right"></i>
             </a>
@@ -352,6 +394,18 @@
             <li>
                 <a asp-controller="Dashboard" asp-action="TeamMembers" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "TeamMembers" || ViewContext.RouteData.Values["action"]?.ToString()?.Contains("TeamMember") == true ? "active" : "")">
                     <i class="bi bi-people"></i><span>Team</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="side-divider">Session</div>
+        <ul class="side-nav">
+            <li>
+                <form asp-controller="Account" asp-action="Logout" method="post" id="sidebarLogoutForm" style="display:none;">
+                    @Html.AntiForgeryToken()
+                </form>
+                <a href="javascript:void(0);" onclick="document.getElementById('sidebarLogoutForm').submit();" class="text-danger-hover">
+                    <i class="bi bi-box-arrow-left text-danger"></i><span>Logout</span>
                 </a>
             </li>
         </ul>

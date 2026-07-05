@@ -1,0 +1,176 @@
+@{
+    Layout = null;
+    string email = ViewBag.Email as string ?? "";
+    string token = ViewBag.ResetToken as string ?? "";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verified — Cafert Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #fbf8f3;
+            --cream-2: #f3ede2;
+            --coffee: #2d2218;
+            --coffee-2: #3d2f27;
+            --caramel: #d4a85a;
+            --muted: #9e8d75;
+        }
+        body {
+            background: linear-gradient(135deg, var(--coffee-2) 0%, #17110c 100%);
+            font-family: 'Jost', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #2b231b;
+        }
+        .login-card {
+            background: var(--cream);
+            border: 1px solid rgba(212, 168, 90, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+        .brand-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .bean-tile {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #3d2f27, #1f1610);
+            border: 1px solid rgba(212, 168, 90, 0.4);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 12px;
+        }
+        .brand-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: var(--coffee);
+        }
+        .brand-text b {
+            font-style: normal;
+            font-family: 'Jost', sans-serif;
+            font-weight: 700;
+            letter-spacing: .25em;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            margin-left: 6px;
+            background: linear-gradient(135deg, #a8804a 0%, #d4a85a 60%, #3d2f27 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .dev-box {
+            background: #f4ecdd;
+            border: 2px dashed #d4a85a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            word-break: break-all;
+            position: relative;
+        }
+        .dev-badge {
+            background-color: var(--caramel);
+            color: var(--coffee);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 3px 8px;
+            border-radius: 4px;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+        }
+        .btn-coffee {
+            background: linear-gradient(135deg, #5b4636 0%, #2d2218 100%);
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            padding: 11px;
+            transition: all 0.2s;
+            letter-spacing: 0.05em;
+        }
+        .btn-coffee:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            filter: brightness(1.1);
+        }
+        .copy-btn {
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            color: var(--coffee);
+            background: rgba(212, 168, 90, 0.2);
+            border: 1px solid var(--caramel);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .copy-btn:hover {
+            background: var(--caramel);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-card">
+    <div class="brand-header">
+        <span class="bean-tile"><span style="font-size: 1.6rem;">☕</span></span>
+        <div class="brand-text"><i>the</i><b>cafert</b></div>
+        <p class="text-muted mt-2 mb-0" style="font-size: 0.9rem;">Email Verified Successfully</p>
+    </div>
+
+    <div class="text-center mb-4">
+        <i class="bi bi-shield-check-fill text-success" style="font-size: 3rem;"></i>
+        <h5 class="mt-2 text-success">Verification Complete</h5>
+        <p class="small text-muted mb-0">We have generated a password reset token for: <b>@email</b></p>
+    </div>
+
+    <!-- Dev Only Box -->
+    <div class="dev-box">
+        <span class="dev-badge"><i class="bi bi-code-slash me-1"></i>Dev Environment Only</span>
+        <div class="d-flex justify-content-between align-items-center mb-2 mt-1">
+            <span class="small text-muted font-weight-bold">Reset Token:</span>
+            <button class="copy-btn" onclick="copyToken()">
+                <i class="bi bi-clipboard me-1"></i>Copy Token
+            </button>
+        </div>
+        <code id="tokenCode" class="text-dark font-monospace" style="font-size: 0.8rem; display: block; background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #ece3d4;">@token</code>
+    </div>
+
+    <a asp-action="ChangePassword" asp-route-email="@email" asp-route-token="@token" class="btn btn-coffee w-100 text-center text-decoration-none">
+        <i class="bi bi-arrow-right-circle me-2"></i>Proceed to Reset Password
+    </a>
+</div>
+
+<script>
+    function copyToken() {
+        var copyText = document.getElementById("tokenCode").innerText;
+        navigator.clipboard.writeText(copyText).then(function() {
+            alert("Token copied to clipboard!");
+        }, function(err) {
+            alert("Could not copy token: " + err);
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@model CAFERT.Controllers.AccountDetailsViewModel
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Account Details";
+}
+
+<div class="page-header">
+    <div>
+        <h1 class="page-title"><small>Settings / Profile</small>Account Details</h1>
+        <div class="crumbs"><a asp-controller="Dashboard" asp-action="Index">Dashboard</a> / Account Settings</div>
+    </div>
+</div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert" style="border-radius: 12px; background-color: rgba(25, 135, 84, 0.1); border-color: rgba(25, 135, 84, 0.2); color: #198754;">
+        <i class="bi bi-check-circle-fill me-2"></i>@TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="border-radius: 12px; background-color: rgba(200, 85, 61, 0.1); border-color: rgba(200, 85, 61, 0.2); color: #c8553d;">
+        <div asp-validation-summary="All"></div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="card-soft mb-4">
+    <form asp-action="AccountDetails" method="post" class="form-card" autocomplete="off">
+        @Html.AntiForgeryToken()
+
+        <h2 class="serif-font mb-2" style="font-size: 1.5rem; color: var(--coffee);">Profile Information</h2>
+        <p class="text-muted mb-4" style="font-size: 0.9rem;">Update your name and primary email address. Changing your email address will update your login username.</p>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label" asp-for="FullName">Full Name *</label>
+                <input class="form-control" asp-for="FullName" required />
+                <span asp-validation-for="FullName" class="text-danger small"></span>
+            </div>
+            
+            <div class="col-md-6">
+                <label class="form-label" asp-for="Email">Email Address *</label>
+                <input class="form-control" asp-for="Email" type="email" required />
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+        </div>
+
+        <div class="form-actions mt-4">
+            <button type="submit" class="btn-fancy btn-save">
+                <i class="bi bi-check-circle"></i> Save Changes
+            </button>
+        </div>
+    </form>
+</div>
